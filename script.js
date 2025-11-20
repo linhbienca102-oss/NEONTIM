@@ -16,7 +16,7 @@ const particleCount = 10000;
 
 const themes = {
   molten: {
-    name: 'Molten',
+    name: 'Màu nắng',
     colors: [
       new THREE.Color(0xff4800),
       new THREE.Color(0xff8c00),
@@ -27,7 +27,7 @@ const themes = {
     bloom: { strength: 0.35, radius: 0.45, threshold: 0.7 }
   },
   cosmic: {
-    name: 'Cosmic',
+    name: 'Tím vũ trụ',
     colors: [
       new THREE.Color(0x6a0dad),
       new THREE.Color(0x9370db),
@@ -38,7 +38,7 @@ const themes = {
     bloom: { strength: 0.4, radius: 0.5, threshold: 0.65 }
   },
   emerald: {
-    name: 'Emerald',
+    name: 'Xanh lục bảo',
     colors: [
       new THREE.Color(0x00ff7f),
       new THREE.Color(0x3cb371),
@@ -170,7 +170,7 @@ function createUI() {
 
   const morphBtn = document.createElement('button');
   morphBtn.className = 'action-btn';
-  morphBtn.textContent = 'Morph';
+  morphBtn.textContent = 'Trái tim';
   morphBtn.addEventListener('click', () => {
     morphBtn.classList.toggle('active');
     morphTarget = morphTarget === 0 ? 1 : 0;
@@ -468,3 +468,4 @@ function animate() {
 
   composer.render();
 }
+
